@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="images/Logo.png">
+  <title>Portfolio - Mr.Ocampo</title>
+  
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: lightslategrey;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .resume-container {
+      width: 750px;
+      margin: 70px auto; /* space for fixed button */
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+      padding: 30px 40px;
+      border: 1px solid #dcdcdc;
+      opacity: 0;
+      transform: scale(0.8);
+      animation: popIn 0.8s forwards ease-out;
+    }
+
+    .header, .contact-info, .section {
+      opacity: 0;
+      transform: scale(0.8);
+      animation: popIn 0.6s forwards ease-out;
+    }
+
+    .header {
+      text-align: center;
+      border-bottom: 3px solid #666;
+      background-color: #e0e0e0;
+      border-radius: 10px;
+      padding: 20px 0 15px;
+      margin-bottom: 20px;
+      animation-delay: 0.2s;
+    }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #666;
+    }
+
+    .header h1 {
+      margin: 15px 0 5px;
+      color: #333;
+      letter-spacing: 1px;
+      font-size: 26px;
+    }
+
+    .position {
+      font-size: 16px;
+      color: #555;
+      font-style: italic;
+    }
+
+    .contact-info {
+      text-align: center;
+      background-color: #f5f5f5;
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 25px;
+      border: 1px solid #ccc;
+      animation-delay: 0.4s;
+    }
+
+    .contact-info p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+
+    .section {
+      margin-bottom: 25px;
+    }
+
+    .section h2 {
+      background-color: #666;
+      color: #fff;
+      padding: 8px 10px;
+      border-radius: 5px;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .section p, .section ul {
+      margin: 8px 0;
+      font-size: 15px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .section ul {
+      list-style: square;
+      padding-left: 20px;
+    }
+
+    .section ul li {
+      font-size: 15px;
+      margin-bottom: 5px;
+      color: #444;
+    }
+
+    .fixed-btn {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+      opacity: 0;
+      transform: scale(0.8);
+      animation: popIn 0.6s forwards ease-out;
+      animation-delay: 0.1s;
+    }
+
+    .fixed-btn:hover {
+      background-color: #555;
+      transform: scale(1.05);
+    }
+
+    @keyframes popIn {
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .section:nth-of-type(1) { animation-delay: 0.6s; }
+    .section:nth-of-type(2) { animation-delay: 0.8s; }
+    .section:nth-of-type(3) { animation-delay: 1s; }
+    .section:nth-of-type(4) { animation-delay: 1.2s; }
+    .section:nth-of-type(5) { animation-delay: 1.4s; }
+
+    @media (max-width: 800px) {
+      .resume-container {
+        width: 90%;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="fixed-btn" onclick="window.location.href='Index.html'">← Back</button>
+
+  <div class="resume-container">
+
+    <div class="header">
+      <img src="images/Joey.png" alt="Profile Picture" class="profile-pic">
+      <h1>JOEY JR. L. OCAMPO</h1>
+      <p class="position">Information Technology Student</p>
+    </div>
+
+    <div class="contact-info">
+      <p><b>Location:</b> San Manuel, Pangasinan</p>
+      <p><b>Phone:</b> 0962 308 6289</p>
+      <p><b>Email:</b> ocampojoeyjr17@gmail.com</p>
+    </div>
+
+    <div class="section">
+      <h2>Objective</h2>
+      <p>
+        Motivated IT student with a strong foundation in programming, networking, and system analysis. 
+        Eager to apply technical skills to real-world challenges and contribute to innovative technology solutions.
+      </p>
+    </div>
+    
+    <div class="section">
+      <h2>Skills</h2>
+      <ul>
+        <li>Computer Programming</li>
+        <li>Skills Management</li>
+        <li>Adaptability</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Educational Background</h2>
+      <p>
+        <b>Tertiary:</b><br>
+        University of Eastern Pangasinan<br>
+        Bachelor of Science in Information Technology<br>
+        <i>2024 – Present</i>
+      </p>
+      <p>
+        <b>Secondary:</b><br>
+        Mataas na Paaralang Juan C. Laya<br>
+        <i>2016 – 2022</i>
+      </p>
+      <p>
+        <b>Primary:</b><br>
+        San Manuel Elementary School<br>
+        <i>2010 – 2016</i>
+      </p>
+    </div>
+    
+    <div class="section">
+      <h2>Work Experience</h2>
+      <p>Department of Agriculture - LGU San Manuel (2024)</p>
+    </div>
+
+    <div class="section">
+      <h2>Hobbies</h2>
+      <ul>
+        <li>Playing <b>Mobile Legends: Bang Bang</b></li>
+        <li>Playing <b>Call of Duty: Mobile</b></li>
+        <li>Playing <b>Roblox</b></li>
+      </ul>
+    </div>
+
+  </div>
+</body>
+</html>

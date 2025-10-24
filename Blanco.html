@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/Logo.png">
+    <title>Portfolio - Mr.Blanco</title>
+    <link href="https://www.w3schools.com/bootstrap5/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            background-color: lightslategrey;
+            font-family: Poppins, sans-serif;
+        }
+
+        .back-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: linear-gradient(45deg, black, gold);
+            color: white;
+            text-decoration: none;
+            padding: 12px 22px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 18px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+            transition: transform 0.2s, background 0.3s;
+            z-index: 9999;
+        }
+
+        .back-btn:hover {
+            background: linear-gradient(45deg, gold, black);
+            transform: scale(1.05);
+        }
+
+        .resume {
+            max-width: 800px;
+            background: lightgrey;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            opacity: 0;
+            transform: scale(0.8);
+            animation: popIn 0.8s forwards ease-out;
+        }
+
+        .leftbar {
+            width: 35%;
+            background: linear-gradient(45deg, black, gold, black);
+            color: white;
+            padding: 20px;
+            position: relative;
+            margin-left: 18px;
+            border-radius: 15px;
+            text-align: left;
+            opacity: 0;
+            transform: scale(0.8);
+            animation: popIn 0.6s forwards ease-out;
+            animation-delay: 0.2s;
+        }
+
+        .upperbar {
+            padding: 30px;
+            background: black;
+            width: 750px;
+            height: 150px;
+            position: absolute;
+            margin-top: 27px;
+            border-radius: 15px;
+            opacity: 0;
+            transform: scale(0.8);
+            animation: popIn 0.6s forwards ease-out;
+            animation-delay: 0.1s;
+        }
+
+        .upperbar h2 {
+            margin-left: 290px;
+            font-size: 40px;
+            color: white;
+        }
+
+        .profile {
+            width: 190px;
+            height: 190px;
+            margin-top: 15px;
+            border-radius: 10%;
+            object-fit: cover;
+            border: 3px solid white;
+            margin-left: 25px;
+            opacity: 0;
+            transform: scale(0.8);
+            animation: popIn 0.6s forwards ease-out;
+            animation-delay: 0.3s;
+        }
+
+        .textbox {
+            width: 65%;
+            padding: 20px;
+            border-radius: 0 10px 10px 0;
+            margin-top: 210px;
+            opacity: 0;
+            transform: scale(0.8);
+            animation: popIn 0.6s forwards ease-out;
+            animation-delay: 0.4s;
+        }
+
+        .paragraph {
+            background: linear-gradient(45deg, black, gold, white, grey);
+            color: black;
+            padding: 8px;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            padding: 3px 0;
+            color: black;
+            font-size: 18px;
+        }
+
+        h3 {
+            margin-top: 110px;
+            color: black;
+            font-size: 25px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        @keyframes popIn {
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-btn">← Back</a>
+
+    <div class="resume">
+        <div class="upperbar">
+            <h2>BLANCO<br>LORENCE WARREN G.</h2>
+        </div>
+        <div class="leftbar">
+            <img src="images/LW.jpg" class="profile"> 
+            <h5 class="paragraph">PERSONAL INFORMATION</h5>
+            <ul>
+                <li><b>Date of Birth:</b> Feb. 20, 2006</li>
+                <li><b>Birthplace:</b> Cabanatuan City, N.E</li>
+                <li><b>Citizenship:</b> Filipino</li>
+                <li><b>Civil Status:</b> Single</li>
+                <li><b>Gender:</b> Male</li>
+                <li><b>Height:</b> 5'5"</li>
+                <li><b>Weight:</b> 65Kg</li>
+                <li><b>Religion:</b> Catholic</li>
+            </ul>
+            <h3>Contact me:</h3>
+            <p>📍<br>San Manuel, Pangasinan</p>
+            <p>☏<br>0971 116 8758</p>
+            <p>✉<br>blancolorencewarren@gmail.com</p>
+        </div>
+        <div class="textbox">
+            <h5 class="paragraph">ABOUT ME</h5>
+            <p>My goal is to contribute to the advancement of Information Technology by applying problem-solving, communication, and critical-thinking skills. I am passionate about adapting to evolving technologies, exploring innovative solutions, and continuously improving systems and processes within the IT field.</p>
+            <h5 class="paragraph">EDUCATIONAL BACKGROUND</h5>
+            <ul>
+                <li><b>TERTIARY:</b><br> UNIVERSITY OF EASTERN PANGASINAN<br> Bachelor of Science in Information Technology <br>2024 - Present</li><br>
+                <li><b>SECONDARY:</b><br> MATAAS NA PAARALANG JUAN C. LAYA<br> 2018 - 2022</li><br>
+                <li><b>PRIMARY:</b><br> NARRA ELEMENTARY SCHOOL<br> 2012 - 2018</li>
+            </ul>
+            <h5 class="paragraph">SKILLS</h5>
+            <p><b><i class="bi bi-globe"></i> Web Developer (Front & Backend)</b></p>
+            <p><b><i class="bi bi-file-earmark-code"></i> C#</b></p>
+            <p><b><i class="bi bi-stack"></i> C++</b></p>
+            <p><b><i class="bi bi-filetype-java"></i> Java</b></p>
+            <p><b><i class="bi bi-easel2"></i> Graphic Designer</b></p>
+        </div>
+    </div>
+</body>
+</html>

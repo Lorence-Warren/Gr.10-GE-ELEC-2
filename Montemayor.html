@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="images/Logo.png">
+
+  <title>Portfolio - Ms.Montemayor</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: lightslategrey;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .back-btn {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      padding: 10px 20px;
+      background: magenta;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      z-index: 100;
+      transition: background 0.3s;
+      opacity: 0;
+      transform: scale(0.8);
+      animation: popIn 0.6s forwards ease-out;
+    }
+
+    .back-btn:hover {
+      background: purple;
+    }
+
+    .hero {
+      max-width: 800px;
+      background-color: hotpink;
+      margin: 80px auto 50px auto;
+      padding: 30px;
+      border-radius: 15px;
+      border: 4px solid white;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+      opacity: 0;
+      transform: scale(0.8);
+      animation: popIn 0.8s forwards ease-out;
+      animation-delay: 0.1s;
+    }
+
+    .hero-top {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 20px;
+    }
+
+    .profile {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      opacity: 0;
+      transform: scale(0.8);
+      animation: popIn 0.8s forwards ease-out;
+      animation-delay: 0.2s;
+    }
+
+    .kram {
+      flex: 1;
+      background-color: transparent;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: left;
+      opacity: 0;
+      transform: scale(0.8);
+      animation: popIn 0.8s forwards ease-out;
+      animation-delay: 0.3s;
+    }
+
+    .kram h2 {
+      font-size: 48px;
+      color: white;
+      margin: 0;
+    }
+
+    .paragraphs {
+      background: linear-gradient(45deg, magenta, white, fuchsia, purple);
+      padding: 8px 15px;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 50px;
+      border: 2px solid purple;
+      display: inline-block;
+      margin: 20px 0 10px 0;
+      opacity: 0;
+      transform: scale(0.8);
+      animation: popIn 0.8s forwards ease-out;
+    }
+
+    .text {
+      margin-top: 20px;
+      opacity: 0;
+      transform: scale(0.8);
+      animation: popIn 0.8s forwards ease-out;
+      animation-delay: 0.4s;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      font-size: 18px;
+      color: white;
+      text-align: left;
+    }
+
+    ul li {
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+
+    .page1 {
+      max-width: 800px;
+      background-color: hotpink;
+      margin: 50px auto;
+      padding: 30px;
+      border-radius: 15px;
+      border: 4px solid white;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+      color: white;
+      opacity: 0;
+      transform: scale(0.8);
+      animation: popIn 0.8s forwards ease-out;
+      animation-delay: 0.5s;
+    }
+
+    .page1 h4 {
+      margin-top: 20px;
+      background: linear-gradient(45deg, magenta, white, fuchsia, purple);
+      padding: 8px 15px;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 50px;
+      border: 2px solid purple;
+      display: inline-block;
+      color: black;
+    }
+
+    .page1 ul {
+      margin-top: 10px;
+    }
+
+    .page1 li {
+      margin-bottom: 10px;
+    }
+
+    .page1 p {
+      margin-top: 15px;
+      font-size: 18px;
+      text-align: justify;
+      line-height: 1.6;
+      color: white;
+    }
+
+    @keyframes popIn {
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @media(max-width: 900px) {
+      .hero-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .kram {
+        text-align: center;
+      }
+
+      .kram h2 {
+        font-size: 36px;
+      }
+
+      .hero, .page1 {
+        width: 90%;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="index.html" class="back-btn"><i class="bi bi-arrow-left"></i> Back</a>
+
+  <div class="hero">
+    <div class="hero-top">
+      <img src="images/Rossel.png" alt="Profile" class="profile">
+      <div class="kram">
+        <h2>ROSSEL MONTEMAYOR</h2>
+      </div>
+    </div>
+
+    <div class="text">
+      <h4 class="paragraphs">Educational Attainment</h4>
+      <ul>
+        <li><b>TERTIARY:</b> Bachelor of Science in Information Technology<br>University of Eastern Pangasinan, Canarvacanan, Binalonan, Pangasinan (2024-2025)</li>
+        <li><b>SECONDARY:</b> Cipriano P. Primicias National High School (2018-2022)</li>
+        <li><b>PRIMARY:</b> Alcala Central School (2012-2018)</li>
+      </ul>
+
+      <h4 class="paragraphs">Employment Records</h4>
+      <ul>
+        <li><b>Customer Service & Retail:</b> Handled 50+ inquiries daily, trained employees, managed inventory and complaints.</li>
+        <li><b>Finance & Accounting:</b> Conducted market research, analyzed budgets, saved $200K annually, developed strategic models.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="page1">
+    <h4 class="paragraphs">Personal Info</h4>
+    <ul>
+      <li><b>Date of Birth:</b> November 03, 2005</li>
+      <li><b>Birthplace:</b> Poblacion West, Alcala Pangasinan</li>
+      <li><b>Citizenship:</b> Filipino</li>
+      <li><b>Religion:</b> Catholic</li>
+      <li><b>Gender:</b> Female</li>
+      <li><b>Civil Status:</b> Single</li>
+    </ul>
+
+    <h4 class="paragraphs">Narrative</h4>
+    <p>
+      <b>ROSSEL M.</b> – <strong>Experienced Customer Service & Finance Professional</strong><br><br>
+      With a strong background in customer service and finance, Rossel has developed a reputation for efficiency, problem-solving, and strategic decision-making. She has successfully handled customer interactions and high-level financial analysis, showcasing versatility and expertise.<br><br>
+      In customer service & retail, she handled 50+ inquiries daily, trained new employees, and managed inventory efficiently. In finance & accounting, she conducted research, analyzed budgets, and implemented cost-saving measures that saved $200K annually, contributing to business growth.
+    </p>
+  </div>
+
+</body>
+</html>

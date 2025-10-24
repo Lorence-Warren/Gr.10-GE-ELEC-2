@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="images/Logo.png">
+  <title>Portfolio - Rev.Quinto</title>
+  <style>
+    body {
+     background-color: lightslategrey;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+
+    table {
+      width: 600px;
+      height: 800px;
+      margin: 60px auto; /* space for button */
+      border-collapse: collapse;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      opacity: 0;
+      transform: scale(0.8);
+      animation: popIn 0.8s forwards ease-out;
+    }
+
+    .left {
+      width: 200px;
+      background-color: #1C2833;
+      color: white;
+      padding: 20px;
+      vertical-align: top;
+      opacity: 0;
+      transform: scale(0.8);
+      animation: popIn 0.6s forwards ease-out;
+      animation-delay: 0.2s;
+    }
+
+    .right {
+      width: 400px;
+      background-color: #FDFEFE;
+      color: #000;
+      padding: 25px;
+      vertical-align: top;
+      opacity: 0;
+      transform: scale(0.8);
+      animation: popIn 0.6s forwards ease-out;
+      animation-delay: 0.4s;
+    }
+
+    h1, h2 {
+      color: #1C2833;
+      margin-top: 0;
+    }
+
+    hr {
+      border: 0;
+      border-top: 2px solid #1C2833;
+    }
+
+    .fixed-btn {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: #1C2833;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+      opacity: 0;
+      transform: scale(0.8);
+      animation: popIn 0.6s forwards ease-out;
+      animation-delay: 0.1s;
+    }
+
+    .fixed-btn:hover {
+      background-color: #2E4053;
+      transform: scale(1.05);
+    }
+
+    @keyframes popIn {
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .left img {
+      display: block;
+      margin: 0 auto 20px auto;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      opacity: 0;
+      transform: scale(0.8);
+      animation: popIn 0.6s forwards ease-out;
+      animation-delay: 0.3s;
+    }
+
+    .left h2, .left p {
+      opacity: 0;
+      transform: scale(0.8);
+      animation: popIn 0.6s forwards ease-out;
+      animation-delay: 0.4s;
+    }
+
+    .right h1, .right h2, .right hr, .right p {
+      opacity: 0;
+      transform: scale(0.8);
+      animation: popIn 0.6s forwards ease-out;
+    }
+
+    .right h1 { animation-delay: 0.5s; }
+    .right hr:first-of-type { animation-delay: 0.6s; }
+    .right p:first-of-type { animation-delay: 0.7s; }
+
+    .right h2:nth-of-type(1) { animation-delay: 0.8s; }
+    .right hr:nth-of-type(2) { animation-delay: 0.9s; }
+    .right p:nth-of-type(2) { animation-delay: 1s; }
+
+    .right h2:nth-of-type(2) { animation-delay: 1.1s; }
+    .right hr:nth-of-type(3) { animation-delay: 1.2s; }
+    .right p:nth-of-type(3) { animation-delay: 1.3s; }
+
+    .right h2:nth-of-type(3) { animation-delay: 1.4s; }
+    .right hr:nth-of-type(4) { animation-delay: 1.5s; }
+    .right p:nth-of-type(4) { animation-delay: 1.6s; }
+
+  </style>
+</head>
+<body>
+
+  <button class="fixed-btn" onclick="window.location.href='Index.html'">← Back </button>
+
+  <table>
+    <tr>
+      <td class="left">
+        <img src="images/Moises.jpg" alt="Profile" style="width: 200px; height: 200px; display: inline-block; object-fit: cover; border-radius: 10%; margin-left: 15px;">
+        
+        <h2 style="text-align: center; border-bottom: 1px solid #fff; padding-bottom: 5px;">Personal Details</h2>
+
+        <p style="line-height: 1.6;">
+          <b>Name:</b><br>
+          Moises Quinto<br><br>
+
+          <b>Address:</b><br>
+          123, Zone 1, Maningding,<br>
+          Sta. Barbara, Pangasinan<br><br>
+
+          <b>Age:</b><br>
+          20<br><br>
+
+          <b>Birth Date:</b><br>
+          October 10, 2005<br><br>
+
+          <b>Phone Number:</b><br>
+          +63 985 957 0071<br><br>
+
+          <b>Email Address:</b><br>
+          moisesquinto1021@gmail.com<br><br>
+
+          <b>Driver’s License:</b><br>
+          Student License
+        </p>
+      </td>
+
+      <td class="right">
+        <h1>About Me</h1>
+        <hr>
+        <p style="text-align: justify;">
+          Aspiring IT professional pursuing a BSIT degree with a passion for coding, problem-solving, and technology. Eager to gain hands-on experience and contribute to innovative projects in the field of Information Technology.
+        </p>
+
+        <h2>Education</h2>
+        <hr>
+        <p>
+          <b>Degree:</b><br>
+          Bachelor of Science in Information Technology (BSIT)<br><br>
+
+          <b>Institution:</b><br>
+          University of Eastern Pangasinan<br><br>
+
+          <b>Year of Graduation:</b><br>
+          After 4 years<br><br>
+
+          <b>Relevant Coursework:</b><br>
+          Programming Fundamentals<br>
+          Data Structures and Algorithms<br>
+          Computer Networks<br>
+          Database Management Systems<br>
+          Web Development
+        </p>
+
+        <h2>Skills</h2>
+        <hr>
+        <p>
+          <b>Software & Tools:</b><br>
+          Microsoft Office Suite (Word, Excel, PowerPoint), Visual Studio Code<br><br>
+
+          <b>Web Development:</b><br>
+          HTML, CSS (Beginner Level)
+        </p>
+
+        <h2>References</h2>
+        <hr>
+        <p>Available upon request.</p>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>

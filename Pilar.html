@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="images/Logo.png">
+  <title>Portfolio - Ms.Pilar</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+  <style>
+    body {
+      background-color: lightslategrey;
+      font-family: Arial, sans-serif;
+      position: relative;
+    }
+
+    .back-btn {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      z-index: 1000;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .back-btn:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+
+    .resume-container {
+      max-width: 900px;
+      margin: 80px auto;
+      background: beige;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      opacity: 0;
+      transform: scale(0.8);
+      animation: popIn 1s forwards ease-out;
+    }
+
+    .left-section, .right-section {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeUp 0.8s forwards ease-out;
+    }
+
+    .left-section {
+      background-image: linear-gradient(45deg, gray, gray);
+      color: white;
+      width: 35%;
+      padding: 20px;
+      border-radius: 10px 0 0 10px;
+      animation-delay: 0.3s;
+    }
+
+    .right-section {
+      width: 65%;
+      padding: 20px;
+      animation-delay: 0.6s;
+    }
+
+    .logo {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      margin-bottom: 15px;
+      position: relative;
+      z-index: 999;
+      margin-left: 30px;
+    }
+
+    .section-title {
+      background: linear-gradient(45deg, black, black);
+      color: white;
+      padding: 5px;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 5px;
+      margin-bottom: 5px;
+    }
+
+    .info-list, .content-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .info-list li, .content-list li {
+      margin-bottom: 8px;
+    }
+
+    .contact-info p {
+      text-align: center;
+    }
+
+    .fw-bold {
+      text-align: center;
+      font-weight: bold;
+      color: white;
+    }
+
+    .flow li {
+      font-size: 14px;
+      padding: 1px;
+    }
+
+    p {
+      text-align: justify;
+    }
+
+    @keyframes popIn {
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="back-btn" onclick="window.location.href='index.html'">← Back</button>
+
+  <div class="resume-container">
+    <div class="left-section">
+      <img src="images/Airene.png" class="logo">
+      <h3 class="fw-bold">AIRENE L. PILAR</h3>
+      <div class="contact-info">
+        <p>055 Irrigation Side, Narra, San Manuel, Pangasinan</p>
+        <p>pilarairene@gmail.com</p>
+        <p>0977 032 8006</p>
+      </div>
+
+      <h4 class="section-title">Personal Information</h4>
+      <ul class="info-list">
+        <li><b>Date of Birth:</b> June 7, 2006</li>
+        <li><b>Place of Birth:</b> RHU Clinic San Manuel, Pangasinan</li>
+        <li><b>Civil Status:</b> Single</li>
+        <li><b>Citizenship:</b> Filipino</li>
+        <li><b>Religion:</b> Catholic</li>
+        <li><b>Gender:</b> Female</li>
+        <li><b>Height:</b> 4'11"</li>
+        <li><b>Weight:</b> 43kgs</li>
+      </ul>
+
+      <br>
+      <h4 class="section-title">Language</h4>
+      <ul class="flow">
+        <li>Ilocano</li>
+        <li>Tagalog</li>
+        <li>English</li>
+      </ul>
+    </div>
+
+    <div class="right-section">
+      <h4 class="section-title">About Me</h4>
+      <p>I am looking to develop my skills and expertise in the field of Information Technology. I seek challenging opportunities where I can apply my technical knowledge and contribute to innovative projects. I aspire to grow in a dynamic and stimulating environment that fosters continuous learning and professional advancement in the IT industry</p>
+
+      <h4 class="section-title">Educational Background</h4>
+      <ul class="content-list">
+        <li><br><b>TERTIARY:</b><br> Bachelor of Science in Information Technology<br> University of Eastern Pangasinan<br>Canarvacanan, Binalonan, Pangasinan<br>2024 - Present</li>
+        <li><br><b>SECONDARY:</b><br> MATAAS NA PAARALANG JUAN C. LAYA<br>2018 - 2022</li>
+        <li><br><b>PRIMARY:</b><br> SAN ROQUE INTEGRATED SCHOOL<br>2012 - 2018</li>
+      </ul>
+
+      <h4 class="section-title">Skills</h4>
+      <ul class="content-list">
+        <li>Java</li>
+        <li>C++</li>
+        <li>Web Designer</li>
+        <li>Backend Developer</li>
+      </ul>
+
+      <h4 class="section-title">Work Experience</h4>
+      <ul class="content-list">
+        <li><b>LGU San Manuel</b> - Computer Encoder</li>
+      </ul>
+
+
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
